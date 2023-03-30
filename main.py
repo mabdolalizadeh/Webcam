@@ -16,8 +16,12 @@ while True:
         invChannel = 255 - frame
 
         tempGrayChannel = frame.copy()
-        tempGrayChannel = cv2.cvtColor(tempGrayChannel,cv2.COLOR_BGR2GRAY)
-        grayChannel = np.ones((720,1280,3))
+        tempGrayChannel = cv2.cvtColor(tempGrayChannel, cv2.COLOR_BGR2GRAY)
+        print(tempGrayChannel[:3,:3])
+        # grayChannel = np.ones((720,1280,3))
+        # cv2.imshow("1", tempGrayChannel)
+
+        grayChannel = np.random.rand(720,1280,3).astype(np.uint8)
         grayChannel[:,:,0] = tempGrayChannel
         grayChannel[:,:,1] = tempGrayChannel
         grayChannel[:,:,2] = tempGrayChannel
