@@ -1,2 +1,2 @@
 # Webcam
-### this is my first homeWork
+### This is my first homework
